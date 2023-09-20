@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap");
+
+/* Estilos generales */
+body {
+    height: 500px;
+
+    background: {
+        repeat: no-repeat;
+        position: center center;
+        size: cover;
+        image: url("../assets/background.jpeg");
+    }
+}
+
+.bg1,
+.bg2 {
+    height: 500px;
+
+    background: {
+        repeat: no-repeat;
+        position: center center;
+        size: cover;
+    }
+}
+
+.bg1 {
+    background-image: url("../assets/background.jpeg");
+}
+
+.bg2 {
+    background-color: #F5F5DC;
+}
+
+.map iframe {
+    height: 200px;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 20px;
+
+    a {
+        color: #ffffff;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    ul {
+        padding: 0;
+    }
+
+    li {
+        list-style: none;
+    }
+}
+
+.wrap-footer {
+    display: grid;
+    grid-template-columns: 30% 15% 15% 20%;
+    column-gap: 5%;
+    padding: 1rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.logo-element_footer {
+    display: flex;
+    margin: 0;
+
+    img {
+        max-height: 75px;
+    }
+}
+
+.element-footer h5 {
+    margin: 1rem 0;
+}
+
+.text-element-footer li {
+    line-height: 2;
+}
+
+.link-elements-footer li a {
+    color: #FFC300;
+}
+
+.rrss-element-footer ul {
+    display: flex;
+    flex-flow: wrap;
+}
+
+.rrss-element-footer img {
+    width: 35px;
+}
+
+.rrss-element-footer li {
+    margin-right: 1rem;
+}
+
+.footer-creds {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    color: #576171;
+    font-size: .9rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content {
+    margin-top: 80px;
+}
+
+/* Estilo personalizado para el scrollbar en Firefox */
+::-webkit-scrollbar {
+    background: transparent;
+    width: 0px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Contenido de ejemplo para que haya suficiente contenido para hacer scroll */
+.container {
+    height: 300px;
+    overflow-y: scroll;
+}
+
+.social-icon {
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+.social-icons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.li {
+    margin: 10px;
+}
+
+.btn-card {
+    transition: transform 0.2s ease-in-out;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.card {
+    transition: transform 0.2s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}

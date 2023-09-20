@@ -1,0 +1,24 @@
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.map iframe {
+    width: 75%;
+    height: 100%;
+}
+
+.form-group.row {
+    margin-bottom: 20px;
+}
+
+.col-form-label {
+    padding-top: 7px;
+}

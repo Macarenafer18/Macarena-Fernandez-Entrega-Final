@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap");
+
+/* Estilos generales */
+
+body {
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+}
+
+.bg1 {
+  height: 500px;
+  background-image: url("../assets/background.jpeg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+}
+
+.bg2 {
+  height: 500px;
+  background-color: #F5F5DC;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+}
+
+.map iframe {
+  height: 200px;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Footer */
+footer {
+  background-color: #343a40;
+  color: #ffffff;
+  padding: 10px 0;
+  text-align: center;
+  margin-top: 20px;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer li {
+  list-style: none;
+}
+
+.wrap-footer {
+  display: grid;
+  grid-template-columns: 30% 15% 15% 20%;
+  column-gap: 5%;
+  padding: 1rem;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.logo-element_footer {
+  display: flex;
+  margin: 0rem 0;
+}
+
+.logo-element_footer img {
+  max-height: 75px;
+}
+
+.element-footer h5 {
+  margin: 1rem 0;
+}
+
+.text-element-footer li {
+  line-height: 2;
+}
+
+.link-elements-footer li a {
+  color: #FFC300;
+}
+
+.rrss-element-footer ul {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.rrss-element-footer img {
+  width: 35px;
+}
+
+.rrss-element-footer li {
+  margin-right: 1rem;
+}
+
+.footer-creds {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  color: #576171;
+  font-size: .9rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.content {
+  margin-top: 80px;
+}
+
+::-webkit-scrollbar {
+  background: transparent;
+  width: 0px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Estilo personalizado para el scrollbar en Firefox */
+scrollbar-width: thin;
+scrollbar-color: #888 #f1f1f1;
+
+/* Contenido de ejemplo para que haya suficiente contenido para hacer scroll */
+.container {
+  height: 300px;
+  overflow-y: scroll;
+}
+
+.social-icon {
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
+.social-icons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.li {
+  margin: 10px;
+}
+
+.btn-card {
+  transition: transform 0.2s ease-in-out;
+}
+
+.btn-card:hover {
+  transform: scale(1.1);
+}
+
+.card {
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  /* Opcional: Agrega un desplazamiento hacia arriba */
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+/* Aplica la animación cuando la clase 'fade-in' está presente */
+.fade-in.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Estilo para el fondo del hero */
+.hero {
+  background-image: url('tu-imagen-de-fondo.jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 100px 0;
+  /* Ajusta el espaciado según tus preferencias */
+}
+
+/* Estilo para el título <h1> */
+.dynamic-heading {
+  font-size: 3rem;
+  /* Tamaño grande del título */
+  color: #fff;
+  /* Color del texto */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  /* Sombra de texto */
+  letter-spacing: 2px;
+  /* Espaciado entre letras */
+}
+
+/* Animación de entrada para el título */
+.dynamic-heading {
+  animation: fadeInUp 1.5s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Estilo base para el texto */
+.text-container {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.tilt-text {
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  /* Transición suave de transformación */
+}
+
+/* Estilo para inclinar el texto hacia la izquierda */
+.tilt-left {
+  transform: perspective(400px) rotateY(5deg);
+}
+
+/* Estilo para inclinar el texto hacia la derecha */
+.tilt-right {
+  transform: perspective(400px) rotateY(-5deg);
+}
+
+.mi-btn {
+  background-color: #F5F5DC;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  /* Agregar un radio de borde para hacerlo redondeado */
+  transition: border 0.5s ease-in-out, background-color 0.5s ease-in-out;
+  /* Agregar animación para el borde y el fondo */
+}
+
+.mi-btn:hover {
+  border-color: white;
+  background-color: #d8d8b8;
+  /* Cambiar el color de fondo en hover */
+}

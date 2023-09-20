@@ -1,0 +1,161 @@
+/* Importar fuentes y otros estilos generales aquí */
+
+/* Media query para pantallas de hasta 991px */
+@media (max-width: 991px) {
+    .navbar-scroll {
+        background-color: #fff;
+
+        .navbar-brand,
+        .nav-link,
+        .fa-bars {
+            color:  #4f4f4f !important;
+        }
+    }
+}
+
+.nav-link {
+    font-weight: bold;
+}
+
+.navbar {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+        transform-origin: left;
+        transform: scaleX(0);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    &:hover::before {
+        transform-origin: right;
+        transform: scaleX(1);
+    }
+
+    .navbar-nav .nav-item {
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #fff;
+            transform-origin: left;
+            transform: scaleX(0);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        &:hover::before {
+            transform-origin: right;
+            transform: scaleX(1);
+        }
+    }
+}
+
+.navbar-brand {
+    letter-spacing: 3px;
+    font-size: 2rem;
+    font-weight: 500;
+
+    img {
+        border-radius: 100%;
+        margin: 10px;
+        max-width: 50px;
+        transition: transform 0.3s ease-in-out;
+
+        &:hover {
+            transform: scale(1.5);
+        }
+    }
+
+    .site-name {
+        font-size: 1.5rem;
+        margin-bottom: 0;
+        overflow: hidden;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #fff;
+            transform-origin: left;
+            transform: scaleX(0);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        &:hover::before {
+            transform-origin: right;
+            transform: scaleX(1);
+        }
+    }
+
+    .site-desc {
+        font-size: 1rem;
+        margin-top: -10px;
+    }
+}
+
+/* Estilos para la barra de navegación cuando se desplaza */
+.navbar-scroll {
+
+    .navbar-brand,
+    .nav-link,
+    .fa-bars {
+        color: #fff;
+    }
+
+    box-shadow: none;
+}
+
+.navbar-scrolled {
+
+    .navbar-brand,
+    .nav-link,
+    .fa-bars {
+        color: #4f4f4f;
+    }
+
+    background-color: #fff;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05);
+}
+
+/* Media queries para distintos tamaños de pantalla */
+@media (max-width: 450px) {
+    #intro {
+        height: 950px !important;
+    }
+}
+
+@media (min-width: 550px) and (max-width: 750px) {
+    #intro {
+        height: 1100px !important;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 990px) {
+    #intro {
+        height: 600px !important;
+    }
+}
+
+.display-1 {
+    font-weight: 500 !important;
+    letter-spacing: 40px;
+
+    @media (min-width: 1600px) {
+        font-size: 10rem;
+    }
+}
